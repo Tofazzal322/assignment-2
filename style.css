@@ -2,26 +2,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 
-/* ---------common styles------------- */
+/* ---------common styles start------------- */
 body{
-    /* margin: 0%;
-    padding: 0%; */
+    margin: 0%;
+    padding: 0;
     background-color: #ffffff; 
     font-family: 'Poppins', sans-serif;
 }
+/* ---------common styles start------------- */
+
+/* ----------header start ------------- */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  
+}
+
+/* -----------Navbar links--------------- */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#login{
+    padding-left: 500px;
+    position: relative;
+    
+}
+
+/*----------- Navbar links on mouse-over----------- */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/*--------- Current/active navbar link-------- */
+.active {
+  background-color: #04AA6D;
+}
+/* ----------header end ------------- */
 
 
-/* -------------top banner styles----------- */
+
+
+
+
+/* -------------top banner styles start ---------- */
 
 .top-banner{
-    background-color: blue;
+    background-color: rgb(34, 11, 238);
     padding: 50px;
 }
 
-.banner{
-    display: flex;
-    justify-content: center;  
+.top-banner:hover{
+    background-color: rgb(149, 204, 46);
 }
+
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 
 .banner-text{
     padding-left: 50px;
@@ -29,11 +74,10 @@ body{
 
 .banner-title{
     color: seashell;
-    font-size: 2.5em;
+    font-size: 2.8em;
     font-weight: 900;
     line-height: 70px;  
 }
-
 
 
 .btn{
@@ -41,6 +85,7 @@ body{
     border-radius: 10px;
     background-color: red;
 }
+
 
 .btn a{
     margin-top: 50px;
@@ -50,30 +95,24 @@ body{
     font-size: 18px;
 }
 
+
 .banner img{
-    width: 350px;
-    height: 350px;
-    margin-left: 500px;
+    width: 92%;
 }
 
+/* -------------top banner styles end ---------- */
 
 
+/* /////////////////////////////////////////////////////////// */
 
 
-
-/* all player sectiion styles */
-
-
-main{
-/* display: flex;
- justify-content: center; */
-} 
-
+/* ---------------all player sectiion styles start ---------------*/
 .container{
     width: 1150px;
     padding-left: 95px;
     padding-top: 50px;
 }
+
 
 .all-player{
     display: grid;
@@ -88,15 +127,12 @@ main{
     height: 470px;
     padding: 15px;
     margin-top: 20px;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
-     
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);    
 }
 
 
 .player-img{
-    height: 330px;
-    width: 330px;
-  
+    width: 100%;
 }
 
 
@@ -112,38 +148,43 @@ main{
     opacity: 80%;
     margin-top: -5px;
 } 
+/* ---------------all player sectiion styles end ---------------*/
+
+/* ///////////////////////////////////////////////// */
 
 /* ----------Highlight styles start ------------*/
 
-.all-highlights{
-    display: flex;
-    margin-top: 50px;
+.highlights{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin-top: 150px;
     background-color: #ffffff;
-    justify-content: center; 
 }
 
-.highlight-text{
-    width: 500px;
-    padding: 50px;
-    
-}
 
 .paragraph{
     opacity: 80%;
-    font-size: 13px;
+    font-size: 14px;
+    line-height: 25px;
 }
 
-.match-image img{
-    width: 450px;
-    height: 350px;
-    padding: 50px;
-    margin-left: 70px;
+
+.match-image img{   
+    width: 81%;    
 }
+
 
 .highlight-titlle{
     font-size: 2em;
+    line-height: 70px;
 }
 
+/* ----------Highlight styles end ------------*/
+
+/* ////////////////////////////////////////////////////// */
+
+/* ------------footer styles start ----------------- */
 footer{
     display: flex;
     flex-direction: column;
@@ -159,9 +200,7 @@ footer{
 
 .icon img{
     width: 30px;
-    /* height: 30px; */
     padding-left: 25px;
-    /* white-space: pre-line; */
 }
 
 .logo img{
@@ -172,4 +211,57 @@ footer{
 footer p{
     margin-top: 5px;
     opacity: 90%;
+}
+/* ------------footer styles end ----------------- */
+
+/* --------------Media Queries -------------*/
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+
+/* ----------------Mobile devices------------ */
+@media only screen and (max-width:688px) {
+
+    .all-player{ 
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+}
+
+
+    .highlights{
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;  
+    padding-left: 80px;
+    margin-top: 50px;
+    line-height: normal;
+}
+
+    .match-image{
+    width: 100%;
+    margin-top: 50px;
+    
+}
+
+
+    .banner{
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+}
+
+    .banner-image img{
+    width: 100%;
+    padding-top: 20px;
+}
+
+    .top-banner{
+    background-color: none;
+}
+
+
 }
