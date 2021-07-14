@@ -98,6 +98,7 @@ body{
 
 .banner img{
     width: 92%;
+    height: 90%;
 }
 
 /* -------------top banner styles end ---------- */
@@ -263,5 +264,9 @@ footer p{
     background-color: none;
 }
 
+#login{
+    padding: 10px;
+    margin-bottom: 20px;
+}
 
 }
