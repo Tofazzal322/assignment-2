@@ -1,4 +1,4 @@
-/* -----------fonts ----------------*/
+/* -----------fonts section----------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 
@@ -9,7 +9,7 @@ body{
     background-color: #ffffff; 
     font-family: 'Poppins', sans-serif;
 }
-/* ---------common styles start------------- */
+/* ---------common styles end------------- */
 
 /* ----------header start ------------- */
 .navbar {
@@ -26,11 +26,11 @@ body{
   padding: 12px;
   color: white;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 14px;
 }
 
 #login{
-    padding-left: 500px;
+   margin-left: 500px;
     position: relative;
     
 }
@@ -215,6 +215,8 @@ footer p{
 }
 /* ------------footer styles end ----------------- */
 
+/* ///////////////////////////////////////////////////////////////// */
+
 /* --------------Media Queries -------------*/
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
@@ -267,6 +269,9 @@ footer p{
 #login{
     padding: 10px;
     margin-bottom: 20px;
+    margin: 0;
 }
 
 }
+
+/* ////////////////////////////////////// The  End ///////////////////////////////// */
