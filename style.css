@@ -1,0 +1,118 @@
+/* -----------fonts ----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+/* ---------common styles------------- */
+body{
+    /* margin: 0%;
+    padding: 0%; */
+    background-color: rgb(197, 220, 236); 
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* -------------top banner styles----------- */
+
+.top-banner{
+    background-color: blue;
+    padding: 50px;
+    
+}
+
+.banner{
+    display: flex;
+    justify-content: center;  
+}
+
+.banner-text{
+    padding-left: 30px;
+}
+
+.banner-title{
+    color: seashell;
+    font-size: 3em;
+    font-weight: 900;
+    line-height: 70px;  
+}
+
+
+
+.btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.btn a{
+    margin-top: 50px;
+    text-decoration: none;
+    color: seashell;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.banner img{
+    width: 350px;
+    height: 350px;
+    margin-left: 500px;
+}
+
+
+
+
+
+
+/* all player sectiion styles */
+
+
+main{
+/* display: flex; */
+/* justify-content: center; */
+}
+
+.container{
+    width: 1150px;
+    padding-left: 85px;
+/* justify-content: center; */
+
+}
+
+.all-player{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    
+}
+
+
+.player{
+    display: flex;
+    flex-direction: column;
+    background-color: ivory;  
+    width: 330px;
+    height: 490px;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 5px;
+    align-content: center;
+    
+}
+
+
+.player-img{
+    height: 330px;
+    width: 330px;
+    border-radius: 5px;
+}
+
+
+.player-name{
+    width: 300px;
+    font-size: 20px;
+}
+
+
+.player-details{
+    width: 300px;
+    font-size: 12px;
+} 
